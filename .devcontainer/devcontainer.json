@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/rust
+{
+    "name": "Rust",
+    "securityOpt": "seccomp=unconfined",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "root",
+    "runArgs": [
+        "--net=host"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"GitHub.vscode-pull-request-github",
+				"ms-vscode.hexeditor",
+				"yzhang.markdown-all-in-one",
+				"mutantdino.resourcemonitor",
+				"Gruntfuggly.todo-tree",
+				"rust-lang.rust-analyzer",
+				"serayuzgur.crates",
+				"tamasfe.even-better-toml"
+			]
+		}
+	}
+}
